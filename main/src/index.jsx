@@ -1,7 +1,8 @@
-import React, { Children } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Root from './root/root'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './pages/home/home'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -10,8 +11,8 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "jesaispas",
-        element: <idontno />,
+        path: "",
+        element: <Home />,
       }
     ]
   }
