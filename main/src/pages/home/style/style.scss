@@ -1,9 +1,38 @@
 .bloc {
     width: 700px;
-    height: 500px;
-    padding: 10px;
+    height: 400px;
     margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     background-color: #222831;
     box-shadow: 0 0 70px -10px rgb(0 0 0 / 20%);
     border-radius: 25px;
+    display: flex;
+
+    &_left {
+        background-image: url(https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+        width: 45%;
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: 0 0 20px -10px rgb(0 0 0 / 20%);
+        transition-duration: 300ms;
+        transform: scale(1.02) perspective(1000px);
+
+        &_gradient {
+            height: 100%;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #72EDF2 10%, #5151E5);
+            opacity: 0.8;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    &_left:hover {
+        transform: scale(1.1) perspective(1500px) rotateY(10deg);
+    }
+
+    &_right {
+        margin: auto;
+    }
 }
