@@ -1,0 +1,35 @@
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background: black;
+    padding-top: 30px;
+    color: white;
+
+    &_line {
+        margin: auto;
+        width: 100px;
+        border: 1px solid white;
+    }
+
+    &_logo {
+        text-align: center;
+        font-size: 55px;
+    }
+
+    &_text {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &_bloc {
+        margin-top: 15px;
+        text-align: center;
+
+        &_logo {
+            font-size: 23px;
+            margin-right: 5px;
+            color: white;
+        }
+    }
+}
