@@ -1,0 +1,55 @@
+.slideshow {
+    max-width: 1400px;
+    height: 780px;
+    width: 100%;
+    margin: auto;
+    padding: 16px 4px;
+    position: relative;
+
+    &_img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        transition: 500ms;
+    }
+
+    &_arrow {
+        position: absolute;
+        top: 50%;
+        color: white;
+        cursor: pointer;
+        display: none;
+
+        &_left {
+            left: 5px;
+        }
+
+        &_right {
+            right: 5px;
+        }
+
+        &_logo {
+            font-size: 30px;
+        }
+    }
+
+    &_point {
+        display: flex;
+        top: 4px;
+        justify-content: center;
+        padding: 0px 2px;
+
+        &_text {
+            cursor: pointer;
+            font-size: 22px;
+        }
+    }
+}
+
+.group:hover {
+    .slideshow_arrow {
+        display: block;
+    }
+}
